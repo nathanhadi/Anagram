@@ -91,7 +91,7 @@ function start(e) {
         rack.push(consonants[Math.floor(Math.random() * consonants.length)]);
     }
     rack.forEach(function(tile,index) {
-      tiles[index].src = "scrabble_2d/small/letter_" + String.fromCharCode(tile).toLowerCase() + ".png";  
+      tiles[index].src = "https://github.com/nathanhadi/Anagram/tree/master/scrabble_2d/small/letter_" + String.fromCharCode(tile).toLowerCase() + ".png";  
     })
     originalRack = rack.slice();
     
@@ -205,7 +205,7 @@ function play(e) {
         if (rack.includes(key)) {
             var l = word.length;
             var letter = String.fromCharCode(key);
-            played[l].src = "scrabble_2d/small/letter_" + letter.toLowerCase() + ".png";;
+            played[l].src = "https://github.com/nathanhadi/Anagram/tree/master/scrabble_2d/small/letter_" + letter.toLowerCase() + ".png";;
             var i = originalRack.indexOf(key)
             tiles[i].classList.toggle("down")
             word.push(letter);
